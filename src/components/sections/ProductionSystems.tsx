@@ -1,92 +1,119 @@
 "use client";
 
-import { Wrench, Cloud, Database, Zap } from "lucide-react";
+import {
+  VscCloud,
+  VscDatabase,
+  VscServer,
+  VscTools,
+  VscGlobe,
+  VscSymbolMethod,
+  VscRocket,
+} from "react-icons/vsc";
 
-export default function ProductionSystems() {
-  return (
-    <section className="py-24">
-      {/* TITLE */}
-      <div className="text-center mb-16">
-        <h2
-          className="
-            text-4xl font-bold
-            bg-linear-to-r from-cyan-400 to-purple-500
-            bg-clip-text text-transparent
-          "
-        >
-          ⚡ Production Systems
-        </h2>
-
-        <p className="text-gray-400 mt-3 text-sm">
-          Real products. Real users. Real deployments.
-        </p>
-      </div>
-
-      {/* GRID */}
-      <div className="grid md:grid-cols-2 gap-8">
-        <ProjectCard
-          icon={<Cloud size={20} />}
-          title="Clevermode SaaS Platform"
-          desc="Cloud-based testing & tagging management platform with authentication, billing, device & printer integrations. Serving 200+ active users."
-        />
-
-        <ProjectCard
-          icon={<Database size={20} />}
-          title="Honeycomb Workforce System"
-          desc="Full-stack workforce scheduling and automation platform with assignments, reporting, and operational analytics."
-        />
-
-        <ProjectCard
-          icon={<Zap size={20} />}
-          title="AWS Infrastructure"
-          desc="Deployed on EC2, S3, CloudFront & Route 53 with secure production hosting, CI/CD and scalable architecture."
-        />
-
-        <ProjectCard
-          icon={<Wrench size={20} />}
-          title="Full Stack Engineering"
-          desc="React, TypeScript, Node.js, PostgreSQL & Firebase stack delivering end-to-end features from database to UI."
-        />
-      </div>
-    </section>
-  );
-}
-
-/* ========================= */
-/*  CARD COMPONENT */
-/* ========================= */
-
-function ProjectCard({
+function Card({
   icon,
   title,
   desc,
+  link,
 }: {
   icon: React.ReactNode;
   title: string;
   desc: string;
+  link?: string;
 }) {
-  return (
+  const content = (
     <div
       className="
-        group
         p-6
         rounded-xl
-        bg-[#1b1b1b]
         border border-[#2d2d2d]
-
-        transition-all duration-300
-
-        hover:border-cyan-400/40
-        hover:shadow-[0_0_30px_rgba(34,211,238,0.15)]
-        hover:-translate-y-1
+        bg-[#1b1b1b]
+        hover:bg-[#222]
+        transition
+        cursor-pointer
       "
     >
       <div className="flex items-center gap-3 mb-3 text-cyan-400">
         {icon}
-        <h3 className="text-lg font-semibold text-white">{title}</h3>
+        <h3 className="text-white font-medium">{title}</h3>
       </div>
 
-      <p className="text-sm text-gray-400 leading-relaxed">{desc}</p>
+      <p className="text-sm text-[#bdbdbd] leading-relaxed">{desc}</p>
     </div>
+  );
+
+  if (!link) return content;
+
+  return (
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block no-underline"
+    >
+      {content}
+    </a>
+  );
+}
+
+export default function ProductionSystems() {
+  return (
+    <section className="space-y-14">
+      {/* ================= PRODUCTION ================= */}
+      <div className="text-center space-y-2">
+        <h2 className="text-3xl font-semibold text-transparent bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text">
+          ⚡ Production Systems
+        </h2>
+        <p className="text-sm text-gray-400">
+          Real products. Real users. Real deployments.
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        <Card
+          icon={<VscCloud />}
+          title="Clevermode SaaS Platform"
+          desc="Cloud-based testing & tagging management platform with authentication, billing, device & printer integrations. Serving 200+ active users."
+          link="https://www.clevermode.com.au/"
+        />
+
+        <Card
+          icon={<VscDatabase />}
+          title="Honeycomb Workforce System"
+          desc="Full-stack workforce scheduling and automation platform with assignments, reporting, and operational analytics."
+          link="https://github.com/wild-butterfly/honeycomb-dev-real"
+        />
+      </div>
+
+      {/* ================= MINI BUILDS ================= */}
+      <div className="text-center space-y-2 pt-6">
+        <h3 className="text-xl font-semibold text-purple-300">
+          ✨ Side Projects & Experiments
+        </h3>
+      </div>
+
+      <div className="grid md:grid-cols-3 gap-6">
+        <Card
+          icon={<VscGlobe />}
+          title="Cocktail Finder"
+          desc="API-based app to search cocktail recipes by ingredients using vanilla JavaScript and REST APIs."
+          link="https://github.com/wild-butterfly/cocktailfinder"
+        />
+
+        <Card
+          icon={<VscSymbolMethod />}
+          title="GossipGirl Database API"
+          desc="SQL project modelling characters with custom schema, queries, and backend logic."
+          link="https://github.com/wild-butterfly/gossipgirlAPI"
+        />
+
+        <Card
+          icon={<VscRocket />}
+          title="Askin-workspace  Portfolio"
+          desc="Interactive VS Code–styled portfolio built with Next.js + Tailwind."
+          link="https://github.com/wild-butterfly/askin-workspace"
+        />
+      </div>
+    </section>
   );
 }

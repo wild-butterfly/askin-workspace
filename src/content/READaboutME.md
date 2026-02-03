@@ -1,64 +1,32 @@
-# Aşkın Fear
+# Aşkın Yağmur Fear
 
-> Full Stack Developer building production SaaS products  
-> React • Next.js • Node • PostgreSQL • AWS
+> Full Stack Developer building **production-grade SaaS platforms**  
+> React • Next.js • Node • PostgreSQL • AWS • Stripe
 
 ---
 
 ## 🧠 About
 
-Mechanical engineer turned software engineer.  
-I focus on **real-world tools**, not tutorials.
+Mechanical engineer turned software engineer focused on building  
+real-world systems that solve operational problems — not tutorials.
 
-Currently building:
+Currently shipping:
 
-- Clevermode SaaS
-- Honeycomb scheduling platform
-- Custom PAT testing hardware
-
----
-
-## ⚙️ Tech Stack
-
-### Frontend
-
-- React
-- Next.js
-- TypeScript
-- Tailwind
-
-### Backend
-
-- Node.js
-- Express
-- PostgreSQL
-- Firebase
-
-### DevOps
-
-- AWS EC2
-- CloudFront
-- Nginx
-- Docker
+- ⚡ Clevermode (live SaaS)
+- 🐝 Honeycomb (workforce scheduling)
+- ☁️ Cloud infrastructure on AWS
 
 ---
 
-## 📈 Experience
+## 🎓 Education
 
-### 2025–Now — Full Stack Developer
-
-Building & shipping Clevermode SaaS  
-Serving 200+ active users
-
-### 2023–2025 — Electrical Test Technician
-
-AS/NZS 3760 compliance testing
-
-### 2016–2020 — Mechanical Engineering
+Diploma of Information Technology (Web Development) — Laneway Education _(In Progress)_  
+Bachelor of Mechanical Engineering — Süleyman Demirel University
 
 ---
 
 ## 🚀 Status
 
 Shipping real products.  
+Solving real business problems.  
 Not tutorials.
