@@ -6,8 +6,8 @@ import {
   VscMarkdown,
   VscJson,
   VscTerminal,
-  VscSymbolFile,
   VscServer,
+  VscFolderOpened,
 } from "react-icons/vsc";
 
 const files = [
@@ -26,7 +26,6 @@ const files = [
     path: "/experience",
     icon: <VscTerminal className="text-[#6a9955]" />,
   },
-
   {
     name: "production.tsx",
     path: "/production",
@@ -48,12 +47,18 @@ export default function Sidebar() {
         select-none
       "
     >
-      {/* HEADER */}
+      {/* ===== EXPLORER HEADER ===== */}
       <div className="px-4 py-3 text-xs text-[#9da1a6] tracking-widest border-b border-[#2d2d2d]">
         EXPLORER
       </div>
 
-      {/* FILES */}
+      {/* ===== PROJECT ROOT (NEW) ===== */}
+      <div className="flex items-center gap-2 px-4 py-2 text-xs text-[#bdbdbd] uppercase tracking-wide border-b border-[#232323]">
+        <VscFolderOpened size={14} className="text-[#dcb67a]" />
+        ASKIN-WORKSPACE
+      </div>
+
+      {/* ===== FILE LIST ===== */}
       <div className="p-2 space-y-1">
         {files.map((file) => {
           const active = pathname === file.path;
@@ -66,7 +71,9 @@ export default function Sidebar() {
                 flex items-center gap-2
                 px-3 py-1.5
                 rounded
-                transition-all duration-150
+                outline-none
+                focus:outline-none
+                transition-colors
 
                 ${
                   active
