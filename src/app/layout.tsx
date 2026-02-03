@@ -26,7 +26,7 @@ export default function RootLayout({
           antialiased
         "
       >
-        <div className="flex h-full">
+        <div className="flex min-h-screen">
           {/* LEFT SIDEBAR */}
           <Sidebar />
 

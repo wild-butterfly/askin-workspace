@@ -7,6 +7,7 @@ import {
   VscJson,
   VscTerminal,
   VscSymbolFile,
+  VscServer,
 } from "react-icons/vsc";
 
 const files = [
@@ -24,6 +25,12 @@ const files = [
     name: "experience.log",
     path: "/experience",
     icon: <VscTerminal className="text-[#6a9955]" />,
+  },
+
+  {
+    name: "production.tsx",
+    path: "/production",
+    icon: <VscServer className="text-cyan-400" />,
   },
 ];
 

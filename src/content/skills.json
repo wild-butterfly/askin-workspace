@@ -1,0 +1,7 @@
+{
+  "frontend": ["React", "Next.js", "TypeScript", "Tailwind"],
+  "backend": ["Node.js", "Express", "REST APIs"],
+  "database": ["PostgreSQL", "Firebase"],
+  "cloud": ["AWS EC2", "S3", "CloudFront"],
+  "tools": ["Git", "VS Code", "Postman"]
+}

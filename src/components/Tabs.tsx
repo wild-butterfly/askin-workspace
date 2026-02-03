@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
-import { VscMarkdown, VscJson, VscTerminal } from "react-icons/vsc";
+import { VscMarkdown, VscJson, VscTerminal, VscServer } from "react-icons/vsc";
 
 export default function Tabs() {
   const pathname = usePathname();
@@ -23,18 +23,15 @@ export default function Tabs() {
       path: "/experience",
       icon: <VscTerminal size={14} className="text-green-400" />,
     },
+    {
+      name: "production.tsx",
+      path: "/production",
+      icon: <VscServer size={14} className="text-cyan-400" />,
+    },
   ];
 
   return (
-    <div
-      className="
-        flex items-end
-        h-10
-        px-3
-        bg-[#252526]
-        border-b border-[#2d2d2d]
-      "
-    >
+    <div className="flex items-end h-10 px-3 bg-[#252526] border-b border-[#2d2d2d]">
       {tabs.map((tab) => {
         const active = pathname === tab.path;
 
@@ -49,22 +46,15 @@ export default function Tabs() {
               h-full
               text-sm
               font-normal
-              transition-all
+              transition-colors
+
+              outline-none focus:outline-none focus:ring-0 focus-visible:outline-none active:outline-none
+              border-0
 
               ${
                 active
-                  ? `
-                    bg-[#1e1e1e]
-                    text-white
-                    border-t-2 border-[#3a3d41]
-                    rounded-t-sm
-                    mb-[-1px]
-                  `
-                  : `
-                    text-[#9da1a6]
-                    hover:text-white
-                    hover:bg-[#2a2d2e]
-                  `
+                  ? "bg-[#1e1e1e] text-white"
+                  : "text-[#9da1a6] hover:text-white hover:bg-[#2a2d2e]"
               }
             `}
           >
