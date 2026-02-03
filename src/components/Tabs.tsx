@@ -9,7 +9,7 @@ export default function Tabs() {
 
   const tabs = [
     {
-      name: "README.md",
+      name: "READaboutME.md",
       path: "/",
       icon: <VscMarkdown size={14} className="text-blue-400" />,
     },
