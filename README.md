@@ -7,6 +7,12 @@ Instead of a traditional static portfolio, this project presents content as **co
 
 ---
 
+## 🚀 Live Demo
+
+👉 https://askinportfolio.vercel.app
+
+---
+
 ## 🧠 Tech Stack
 
 - ⚛️ Next.js 16 (App Router, Server Components)
@@ -56,12 +62,6 @@ Content files are loaded safely using Node.js:
 - works with Next.js App Router
 - fully compatible with Vercel
 - no custom loaders required
-
----
-
-## 🚀 Live Demo
-
-👉 https://askinportfolio.vercel.app
 
 ---
 
