@@ -8,16 +8,27 @@ import Tabs from "@/components/Tabs";
 export const metadata: Metadata = {
   metadataBase: new URL("https://askin-workspace.vercel.app"),
 
+  /* ============================= */
+  /* 🔥 TITLE  */
+  /* ============================= */
   title: {
-    default: "Aşkın Fear | Full Stack Developer",
+    default:
+      "Aşkın Fear (Askin Fear) | Full Stack Developer | React • Next.js • Node • Melbourne",
     template: "%s | Aşkın Fear",
   },
 
+  /* ============================= */
+  /* 🔥 DESCRIPTION  */
+  /* ============================= */
   description:
-    "Full Stack Developer building production SaaS platforms with React, Next.js, Node.js, PostgreSQL and AWS. Portfolio styled as an interactive developer workspace.",
+    "Aşkın Fear (Askin Fear) is a Melbourne-based Full Stack Developer building production SaaS platforms with React, Next.js, Node.js, PostgreSQL and AWS. Interactive developer workspace portfolio.",
 
+  /* ============================= */
+  /* 🔥 KEYWORDS (ASCII + local SEO) */
+  /* ============================= */
   keywords: [
     "Aşkın Fear",
+    "Askin Fear",
     "Full Stack Developer",
     "React Developer",
     "Next.js Developer",
@@ -25,33 +36,76 @@ export const metadata: Metadata = {
     "Node.js",
     "PostgreSQL",
     "AWS",
-    "Software Engineer",
+    "Software Engineer Australia",
+    "Melbourne Developer",
     "Portfolio",
   ],
 
+  /* ============================= */
+  /* 🔥 Google verification */
+  /* ============================= */
   verification: {
     google: "1lSqm5A9QtLIqrV8gtuyJavkcebRs0XVCILGTzDSzkI",
   },
 
+  /* ============================= */
+  /* 🔥 CANONICAL */
+  /* ============================= */
+  alternates: {
+    canonical: "/",
+  },
+
+  /* ============================= */
+  /* 🔥 AUTHOR (Google seviyor) */
+  /* ============================= */
+  authors: [{ name: "Aşkın Fear", url: "https://askin-workspace.vercel.app" }],
+  creator: "Aşkın Fear",
+
+  /* ============================= */
+  /* 🔥 OPEN GRAPH (LinkedIn/Twitter preview) */
+  /* ============================= */
   openGraph: {
-    title: "Aşkın Fear | Full Stack Developer",
+    title: "Aşkın Fear (Askin Fear) | Full Stack Developer",
     description:
-      "Interactive VS Code–styled developer portfolio built with Next.js and React.",
+      "Melbourne-based Full Stack Developer building SaaS products with React, Next.js and AWS.",
     url: "/",
     siteName: "Aşkın Fear Portfolio",
     type: "website",
+    locale: "en_AU",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Aşkın Fear Portfolio",
+      },
+    ],
   },
 
+  /* ============================= */
+  /* 🔥 TWITTER */
+  /* ============================= */
   twitter: {
     card: "summary_large_image",
-    title: "Aşkın Fear | Full Stack Developer",
+    title: "Aşkın Fear (Askin Fear) | Full Stack Developer",
     description:
-      "Interactive developer workspace portfolio built with Next.js.",
+      "Interactive developer workspace portfolio built with Next.js and React.",
+    creator: "@askinfear",
   },
 
+  /* ============================= */
+  /* 🔥 ROBOTS */
+  /* ============================= */
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
   },
 };
 
@@ -70,6 +124,11 @@ export default function RootLayout({
           antialiased
         "
       >
+        {/* 🔥 Invisible H1 = SEO BOOST */}
+        <h1 className="sr-only">
+          Aşkın Fear (Askin Fear) – Full Stack Developer Portfolio Melbourne
+        </h1>
+
         <div className="flex min-h-screen">
           <Sidebar />
 
