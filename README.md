@@ -9,7 +9,7 @@ Instead of a traditional static portfolio, this project presents content as **co
 
 ## 🚀 Live Demo
 
-👉 https://askinportfolio.vercel.app
+👉 https://askin-portfolio.vercel.app
 
 ---
 
