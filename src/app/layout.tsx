@@ -5,69 +5,53 @@ import Sidebar from "@/components/Sidebar";
 import Terminal from "@/components/Terminal";
 import Tabs from "@/components/Tabs";
 
-/*
-  ✅ GLOBAL SEO CONFIG
-  
-*/
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://askin-workspace.vercel.app"),
 
   title: {
-    default: "Aşkın Fear — Full Stack Developer",
+    default: "Aşkın Fear | Full Stack Developer",
     template: "%s | Aşkın Fear",
   },
 
   description:
-    "Full Stack Developer building production-grade SaaS platforms with React, Next.js, Node.js, PostgreSQL and AWS. Creator of Clevermode & Honeycomb systems.",
+    "Full Stack Developer building production SaaS platforms with React, Next.js, Node.js, PostgreSQL and AWS. Portfolio styled as an interactive developer workspace.",
 
   keywords: [
     "Aşkın Fear",
     "Full Stack Developer",
     "React Developer",
     "Next.js Developer",
+    "TypeScript",
     "Node.js",
     "PostgreSQL",
     "AWS",
-    "SaaS Developer",
-    "Melbourne Developer",
-    "Software Engineer Portfolio",
+    "Software Engineer",
+    "Portfolio",
   ],
 
-  authors: [{ name: "Aşkın Fear" }],
-  creator: "Aşkın Fear",
-  category: "technology",
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-video-preview": -1,
-      "max-snippet": -1,
-    },
+  verification: {
+    google: "1lSqm5A9QtLIqrV8gtuyJavkcebRs0XVCILGTzDSzkI",
   },
 
   openGraph: {
-    title: "Aşkın Fear — Full Stack Developer",
+    title: "Aşkın Fear | Full Stack Developer",
     description:
-      "Production-grade SaaS systems with React, Next.js, Node and AWS.",
+      "Interactive VS Code–styled developer portfolio built with Next.js and React.",
     url: "/",
-    siteName: "Aşkın Portfolio",
-    locale: "en_AU",
+    siteName: "Aşkın Fear Portfolio",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Aşkın Fear — Developer Portfolio",
-    description: "Full-stack SaaS engineer. React • Next • Node • AWS",
+    title: "Aşkın Fear | Full Stack Developer",
+    description:
+      "Interactive developer workspace portfolio built with Next.js.",
   },
 
-  icons: {
-    icon: "/favicon.ico",
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -87,28 +71,17 @@ export default function RootLayout({
         "
       >
         <div className="flex min-h-screen">
-          {/* LEFT SIDEBAR */}
           <Sidebar />
 
-          {/* RIGHT SIDE */}
           <div className="flex flex-col flex-1 bg-[#1e1e1e]">
-            {/* EDITOR */}
             <div className="flex flex-col flex-1 border-l border-[#2d2d2d]">
               <Tabs />
 
-              <main
-                className="
-                  flex-1
-                  overflow-auto
-                  p-10
-                  bg-[#1b1b1b]
-                "
-              >
+              <main className="flex-1 overflow-auto p-10 bg-[#1b1b1b]">
                 {children}
               </main>
             </div>
 
-            {/* TERMINAL */}
             <Terminal />
           </div>
         </div>
