@@ -9,10 +9,10 @@ Instead of a traditional static portfolio, this project presents content as **co
 
 ## 🧠 Tech Stack
 
-- ⚛️ Next.js (App Router, Server Components)
+- ⚛️ Next.js 16 (App Router, Server Components)
 - 🪄 React 19
 - ✨ Tailwind CSS v4
-- 📁 Raw file imports (`.md / .json / .log`)
+- 📁 Server-side file rendering (Node `fs`)
 - 🖥️ VSCode-style UI (Explorer, Tabs, Editor, Terminal)
 - ☁️ Vercel deployment
 
@@ -48,19 +48,20 @@ Code-style rendering with dark VSCode theme.
 
 Fake interactive terminal panel for personality.
 
-### ⚡ Static File Rendering
+### ⚡ Server File Rendering
 
-Uses `?raw` imports instead of Node `fs` for:
+Content files are loaded safely using Node.js:
 
-- faster builds
-- edge compatibility
-- Vercel-safe deployment
+- `fs.readFileSync`
+- works with Next.js App Router
+- fully compatible with Vercel
+- no custom loaders required
 
 ---
 
 ## 🚀 Live Demo
 
-👉 https://your-domain.vercel.app
+👉 https://askinportfolio.vercel.app
 
 ---
 
@@ -72,3 +73,16 @@ cd askin-workspace
 npm install
 npm run dev
 ```
+
+---
+
+## 📂 Content Structure
+
+```
+src/content/
+ ├─ READaboutME.md
+ ├─ skills.json
+ └─ experience.log
+```
+
+These files are rendered directly inside the editor UI.

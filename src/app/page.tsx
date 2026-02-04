@@ -9,8 +9,6 @@ export default function Page() {
   const raw = fs.readFileSync(filePath, "utf8");
 
   return (
-    <div className="max-w-4xl mx-auto mt-12 space-y-16">
-      <CodeViewer code={raw} language="markdown" filename="READaboutME.md" />
-    </div>
+    <CodeViewer code={raw} language="markdown" filename="READaboutME.md" />
   );
 }
