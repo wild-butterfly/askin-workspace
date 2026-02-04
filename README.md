@@ -1,45 +1,70 @@
 # Aşkın Fear — Developer Workspace Portfolio
 
-This is a **VS Code-styled interactive portfolio** built with **Next.js 13 (App Router)**.  
-It simulates a developer workspace where projects, skills, and experience files can be browsed like a code editor.
+A **VS Code–styled interactive portfolio** built with modern **Next.js App Router**.  
+It simulates a real developer workspace where experience, skills, and production systems are explored like files inside an editor.
+
+Instead of a traditional static portfolio, this project presents content as **code files**, giving recruiters a more authentic engineering feel.
+
+---
 
 ## 🧠 Tech Stack
 
-- ⚛️ **Next.js 13**
-- 🪄 **React**
-- ✨ **Tailwind CSS**
-- 📁 File viewer with syntax highlighting
-- 🖥️ VSCode-like UI (sidebar, tabs, editor, terminal)
+- ⚛️ Next.js (App Router, Server Components)
+- 🪄 React 19
+- ✨ Tailwind CSS v4
+- 📁 Raw file imports (`.md / .json / .log`)
+- 🖥️ VSCode-style UI (Explorer, Tabs, Editor, Terminal)
+- ☁️ Vercel deployment
+
+---
 
 ## 💡 Why this approach?
 
-Rather than a static portfolio page, this project:
+Rather than a typical landing page:
 
 ✔ Mimics an actual developer workspace  
-✔ Shows your experience like real files  
+✔ Shows experience as real files  
+✔ Demonstrates engineering mindset  
 ✔ Engages technical recruiters  
-✔ Displays structured, semantic content  
-✔ Looks unique and interactive
+✔ Unique & memorable design
+
+---
 
 ## 🗂️ Features
 
 ### 🧱 Explorer
 
-Browse your markdown, JSON, and log files like a code editor.
+Browse markdown, JSON and log files like VS Code.
 
 ### 📑 Tabs
 
-Click file names to open them in an editor-style tab bar.
+Open multiple files simultaneously in editor-style tabs.
 
 ### 🖋️ Syntax Highlighting
 
-Beautiful syntax highlighting using Prism themes.
+Code-style rendering with dark VSCode theme.
 
 ### 🖥️ Terminal
 
-Fake terminal at the bottom showing a prompt and info.
+Fake interactive terminal panel for personality.
 
-## 🚀 Run Locally
+### ⚡ Static File Rendering
+
+Uses `?raw` imports instead of Node `fs` for:
+
+- faster builds
+- edge compatibility
+- Vercel-safe deployment
+
+---
+
+## 🚀 Live Demo
+
+👉 https://your-domain.vercel.app
+
+---
+
+## 🧑‍💻 Run Locally
 
 ```bash
 git clone https://github.com/wild-butterfly/askin-workspace.git

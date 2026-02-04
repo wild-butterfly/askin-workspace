@@ -8,11 +8,5 @@ export default function SkillsPage() {
   const filePath = path.join(process.cwd(), "src/content/skills.json");
   const raw = fs.readFileSync(filePath, "utf8");
 
-  return (
-    <CodeViewer
-      code={raw}
-      language="json"
-      filename={path.basename(filePath)} // automatically shows skills.json
-    />
-  );
+  return <CodeViewer code={raw} language="json" filename="skills.json" />;
 }
