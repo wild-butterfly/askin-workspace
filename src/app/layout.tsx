@@ -5,10 +5,70 @@ import Sidebar from "@/components/Sidebar";
 import Terminal from "@/components/Terminal";
 import Tabs from "@/components/Tabs";
 
+/*
+  ✅ GLOBAL SEO CONFIG
+  
+*/
+
 export const metadata: Metadata = {
-  title: "Aşkın Fear | Full Stack Developer",
+  metadataBase: new URL("https://askin-workspace.vercel.app"),
+
+  title: {
+    default: "Aşkın Fear — Full Stack Developer",
+    template: "%s | Aşkın Fear",
+  },
+
   description:
-    "Full Stack Developer building production SaaS platforms with React, Next.js, Node, PostgreSQL and AWS.",
+    "Full Stack Developer building production-grade SaaS platforms with React, Next.js, Node.js, PostgreSQL and AWS. Creator of Clevermode & Honeycomb systems.",
+
+  keywords: [
+    "Aşkın Fear",
+    "Full Stack Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Node.js",
+    "PostgreSQL",
+    "AWS",
+    "SaaS Developer",
+    "Melbourne Developer",
+    "Software Engineer Portfolio",
+  ],
+
+  authors: [{ name: "Aşkın Fear" }],
+  creator: "Aşkın Fear",
+  category: "technology",
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+      "max-snippet": -1,
+    },
+  },
+
+  openGraph: {
+    title: "Aşkın Fear — Full Stack Developer",
+    description:
+      "Production-grade SaaS systems with React, Next.js, Node and AWS.",
+    url: "/",
+    siteName: "Aşkın Portfolio",
+    locale: "en_AU",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Aşkın Fear — Developer Portfolio",
+    description: "Full-stack SaaS engineer. React • Next • Node • AWS",
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
