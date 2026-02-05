@@ -1,6 +1,7 @@
 # Aşkın Yağmur Fear
 
-> Full Stack Developer building **production-grade SaaS platforms**  
+> Full Stack Developer based in Melbourne  
+> Building **production-grade SaaS platforms & real-world systems**  
 > React • Next.js • Node • PostgreSQL • AWS • Stripe
 
 ---
@@ -8,7 +9,7 @@
 ## 🧠 About
 
 Mechanical engineer turned software engineer focused on building  
-real-world systems that solve operational problems — not tutorials.
+scalable, practical software that solves real operational problems — not tutorials.
 
 Currently shipping:
 
