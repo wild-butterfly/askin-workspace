@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   /* ============================= */
   title: {
     default:
-      "Aşkın Fear (Askin Fear) | Full Stack Developer | React • Next.js • Node • Melbourne",
+      "Askin Fear | Full Stack Developer | React, Next.js, & TypeScript Portfolio",
     template: "%s | Aşkın Fear",
   },
 
@@ -32,13 +32,18 @@ export const metadata: Metadata = {
     "Full Stack Developer",
     "React Developer",
     "Next.js Developer",
-    "TypeScript",
-    "Node.js",
+    "TypeScript Developer",
+    "Node.js Developer",
     "PostgreSQL",
     "AWS",
+    "Software Engineer Portfolio",
+    "Full Stack Developer Portfolio",
+    "SaaS Developer",
     "Software Engineer Australia",
     "Melbourne Developer",
-    "Portfolio",
+    "Portfolio Website",
+    "Portfolio Project",
+    "VS Code Terminal Portfolio",
   ],
 
   /* ============================= */
@@ -65,11 +70,11 @@ export const metadata: Metadata = {
   /* 🔥 OPEN GRAPH (LinkedIn/Twitter preview) */
   /* ============================= */
   openGraph: {
-    title: "Aşkın Fear (Askin Fear) | Full Stack Developer",
+    title: "Askin Fear | Full Stack Developer Portfolio",
     description:
       "Melbourne-based Full Stack Developer building SaaS products with React, Next.js and AWS.",
     url: "/",
-    siteName: "Aşkın Fear Portfolio",
+    siteName: "Askin Fear Portfolio",
     type: "website",
     locale: "en_AU",
     images: [
@@ -77,7 +82,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Aşkın Fear Portfolio",
+        alt: "Askın Fear Portfolio",
       },
     ],
   },

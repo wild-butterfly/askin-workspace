@@ -1,9 +1,8 @@
-# Aşkın Fear — Developer Workspace Portfolio
+# Askin Fear — Full Stack Developer Portfolio
 
-A **VS Code–styled interactive portfolio** built with modern **Next.js App Router**.  
-It simulates a real developer workspace where experience, skills, and production systems are explored like files inside an editor.
+A **production-ready full stack developer portfolio** built with **React, Next.js, TypeScript and Node.js**.
 
-Instead of a traditional static portfolio, this project presents content as **code files**, giving recruiters a more authentic engineering feel.
+This project presents experience, skills and real-world systems inside a **VS Code–styled developer workspace**, giving recruiters an authentic engineering feel rather than a traditional static portfolio.
 
 ---
 
@@ -24,44 +23,37 @@ Instead of a traditional static portfolio, this project presents content as **co
 
 ---
 
-## 💡 Why this approach?
+## ✨ Features
 
-Rather than a typical landing page:
+### 🧱 VS Code Style UI
 
-✔ Mimics an actual developer workspace  
-✔ Shows experience as real files  
-✔ Demonstrates engineering mindset  
-✔ Engages technical recruiters  
-✔ Unique & memorable design
+Interactive editor-style layout with:
 
----
+- Explorer
+- Tabs
+- Code viewer
+- Terminal
 
-## 🗂️ Features
+### 📄 File-Based Content
 
-### 🧱 Explorer
-
-Browse markdown, JSON and log files like VS Code.
-
-### 📑 Tabs
-
-Open multiple files simultaneously in editor-style tabs.
-
-### 🖋️ Syntax Highlighting
-
-Code-style rendering with dark VSCode theme.
-
-### 🖥️ Terminal
-
-Fake interactive terminal panel for personality.
-
-### ⚡ Server File Rendering
-
-Content files are loaded safely using Node.js:
+Experience, skills and profile data are rendered from real files:
 
 - `fs.readFileSync`
 - works with Next.js App Router
 - fully compatible with Vercel
 - no custom loaders required
+
+---
+
+## 💡 Why this Portfolio?
+
+Instead of a simple landing page:
+
+✔ Shows engineering mindset  
+✔ Demonstrates real production architecture  
+✔ More engaging for technical recruiters  
+✔ Unique & memorable  
+✔ Highlights real projects, not tutorials
 
 ---
 
