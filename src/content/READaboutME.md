@@ -14,7 +14,7 @@ scalable, practical software that solves real operational problems — not tutor
 Currently shipping:
 
 - ⚡ Clevermode (live SaaS)
-- 🐝 Honeycomb (workforce scheduling)
+- 🍂 Flowody (workforce scheduling)
 - ☁️ Cloud infrastructure on AWS
 
 ---

@@ -91,7 +91,7 @@ export default function ProductionSystems() {
 
         <Card
           icon={<VscDatabase />}
-          title="Honeycomb Workforce System"
+          title="Flowody Workforce System"
           desc="Full-stack workforce scheduling and automation platform with assignments, reporting and operational analytics."
           link="https://github.com/wild-butterfly/honeycomb-dev-real"
           badge="github"
